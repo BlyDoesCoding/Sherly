@@ -93,6 +93,8 @@ public class Main {
             }
             //Start Multithreading
 
+            //sectionedList gives the thread their Assigned Part of Files and allFiles are all the Files
+
             ThreadedCompare threadedCompare = new ThreadedCompare(sectionedList, allFiles);
             threadedCompare.start();
 
