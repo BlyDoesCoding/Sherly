@@ -109,7 +109,7 @@ public class Main {
 
         }
 
-        //now everything is finished and the filemap (hashmap with all dups) can be printed out in a nice view
+        //now everything is finished and the Filemap (hashmap with all Dups) can be printed out in a nice view
         //System.out.println(fileMap);
 
         for (String md5: fileMap.keySet()) {
