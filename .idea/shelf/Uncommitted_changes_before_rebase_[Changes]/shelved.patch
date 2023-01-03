@@ -1,0 +1,108 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"9b57ac51-c870-474b-9dfd-64a5fc490635\" name=\"Changes\" comment=\"Just a Test\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/ConsoleColors.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/ConsoleColors.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Main.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2Jn9jTd9EocdVDpvvPMYxSrBjXm\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\"\n  }\n}]]></component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"9b57ac51-c870-474b-9dfd-64a5fc490635\" name=\"Changes\" comment=\"\" />\n      <created>1672703116568</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1672703116568</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"First Creation\">\n      <created>1672703433480</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1672703433480</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"First Creation\">\n      <created>1672703559416</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1672703559416</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Just a Test\">\n      <created>1672703686539</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1672703686539</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"Just a Test\">\n      <created>1672703881482</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1672703881482</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"5\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State>\n              <option name=\"FILTERS\">\n                <map>\n                  <entry key=\"branch\">\n                    <value>\n                      <list>\n                        <option value=\"master\" />\n                      </list>\n                    </value>\n                  </entry>\n                </map>\n              </option>\n            </State>\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"First Creation\" />\n    <MESSAGE value=\"Just a Test\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Just a Test\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 529322e933c3315c287f3b352957b605fec7ba91)
++++ b/.idea/workspace.xml	(date 1672749369753)
+@@ -4,10 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="9b57ac51-c870-474b-9dfd-64a5fc490635" name="Changes" comment="Just a Test">
++    <list default="true" id="9b57ac51-c870-474b-9dfd-64a5fc490635" name="Changes" comment="Removing not needed lines">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/ConsoleColors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsoleColors.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/ThreadedCompare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ThreadedCompare.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -30,12 +29,12 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -73,7 +72,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1672703881482</updated>
+     </task>
+-    <option name="localTasksCounter" value="5" />
++    <task id="LOCAL-00005" summary="Removing not needed lines">
++      <created>1672704560597</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1672704560597</updated>
++    </task>
++    <option name="localTasksCounter" value="6" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -102,6 +108,7 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="First Creation" />
+     <MESSAGE value="Just a Test" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Just a Test" />
++    <MESSAGE value="Removing not needed lines" />
++    <option name="LAST_COMMIT_MESSAGE" value="Removing not needed lines" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: src/ThreadedCompare.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.io.*;\nimport java.nio.file.Files;\nimport java.nio.file.Path;\nimport java.security.MessageDigest;\nimport java.security.NoSuchAlgorithmException;\nimport java.util.ArrayList;\nimport java.util.List;\npublic class ThreadedCompare extends Thread {\n    private final List<Path> pathsToCompareTo;\n    private final List<Path> pathsToBeCompared;\n    public ThreadedCompare (List<Path> pathsToBeCompared, List<Path> pathsToCompareTo) {\n        this.pathsToBeCompared = pathsToBeCompared;\n        this.pathsToCompareTo = pathsToCompareTo;\n    }\n    @Override\n    public void run() {\n\n        //Compare every File\n        for (Path file1 : pathsToBeCompared) {\n            for (Path file2 : pathsToCompareTo) {\n                try {\n                    if (sameContent(file1, file2)) {\n                        List<Path> bothPaths = new ArrayList<>();\n                        bothPaths.add(file1);\n                        bothPaths.add(file2);\n\n                        //here it is trying to add the values in the HashMap\n                        if (Main.fileMap.containsKey(getMD5Sum(file1.toFile()))) {\n                            if (!Main.fileMap.get(getMD5Sum(file1.toFile())).contains(file1)) {\n                                Main.fileMap.get(getMD5Sum(file1.toFile())).add(file1);\n                            }\n                            if (!Main.fileMap.get(getMD5Sum(file1.toFile())).contains(file2)) {\n                                Main.fileMap.get(getMD5Sum(file1.toFile())).add(file2);\n                            }\n                        } else {\n                            Main.fileMap.put(getMD5Sum(file1.toFile()), bothPaths);\n                        }\n                    }\n                } catch (IOException e) {\n                    throw new RuntimeException(e);\n                }\n            }\n            //Update the Progress that can be found in The Main Class\n            Main.progress += 1;\n        }\n        //Update the thread Completion Counter that can be found in the Main Class\n        Main.completedThreads += 1;\n    }\n    private boolean sameContent(Path file1, Path file2) throws IOException {\n        if (file1 != file2) {\n            return Files.mismatch(file1, file2) == -1;\n        }\n        return false;\n    }\n\n    //this is used to get the MD5 String of one of the files (one of them is just fine since they both have the same value)\n    private String getMD5Sum (File file) throws IOException {\n        MessageDigest messageDigest = null;\n        try {\n            messageDigest = MessageDigest.getInstance(\"MD5\");\n        } catch (NoSuchAlgorithmException e) {\n            throw new RuntimeException(e);\n        }\n        FileInputStream fis = new FileInputStream(file);\n\n        byte[] dataBytes = new byte[1024];\n\n        int unread = 0;\n        while ((unread = fis.read(dataBytes)) != -1) {\n            messageDigest.update(dataBytes, 0, unread);\n        }\n        byte[] mdbytes = messageDigest.digest();\n        StringBuilder sb = new StringBuilder();\n        for (byte mdbyte : mdbytes) {\n            sb.append(Integer.toString((mdbyte & 0xff) + 0x100, 16).substring(1));\n        }\n        return sb.toString();\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ThreadedCompare.java b/src/ThreadedCompare.java
+--- a/src/ThreadedCompare.java	(revision 529322e933c3315c287f3b352957b605fec7ba91)
++++ b/src/ThreadedCompare.java	(date 1672749422338)
+@@ -20,21 +20,17 @@
+             for (Path file2 : pathsToCompareTo) {
+                 try {
+                     if (sameContent(file1, file2)) {
+-                        List<Path> bothPaths = new ArrayList<>();
+-                        bothPaths.add(file1);
+-                        bothPaths.add(file2);
++                        List<Path> bothList = new ArrayList<>();
++
++                        bothList.add(file1);
++                        bothList.add(file2);
+ 
+                         //here it is trying to add the values in the HashMap
+-                        if (Main.fileMap.containsKey(getMD5Sum(file1.toFile()))) {
+-                            if (!Main.fileMap.get(getMD5Sum(file1.toFile())).contains(file1)) {
+-                                Main.fileMap.get(getMD5Sum(file1.toFile())).add(file1);
+-                            }
+-                            if (!Main.fileMap.get(getMD5Sum(file1.toFile())).contains(file2)) {
+-                                Main.fileMap.get(getMD5Sum(file1.toFile())).add(file2);
+-                            }
+-                        } else {
+-                            Main.fileMap.put(getMD5Sum(file1.toFile()), bothPaths);
+-                        }
++                        Main.fileMap.putIfAbsent(getMD5Sum(file1.toFile()), bothList);
++
++                        Main.fileMap.get(getMD5Sum(file1.toFile())).removeAll(bothList);
++                        Main.fileMap.get(getMD5Sum(file1.toFile())).addAll(bothList);
++
+                     }
+                 } catch (IOException e) {
+                     throw new RuntimeException(e);
