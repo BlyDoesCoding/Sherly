@@ -13,10 +13,8 @@ public class Main {
 
     public static int completedThreads = 0;
     public static int progress = 0;
-
     public static HashMap<String, List<Path>> fileMap = new HashMap<>();
     public static void main(String[] args) throws InterruptedException {
-
         boolean doTheColorThingy = false;
         boolean showProgress = false;
 
@@ -42,8 +40,6 @@ public class Main {
             return;
         }
 
-
-
         /*System.out.println("Folders: " + paths.size());
          System.out.println("Color: " + doTheColorThingy);
         System.out.println("Progressbar: " + showProgress); */
@@ -59,7 +55,6 @@ public class Main {
             }
             allFiles.addAll(pathList);
         }
-
 
         // calculations for multithreading
 
@@ -77,13 +72,11 @@ public class Main {
 
             List<Path> sectionedList = new ArrayList<>();
 
-
             //Here the different Threads are being started
             //Usually the separation gives the first threads the same number of files to be working on and the last one is given all the files that could not be separetated
             if (i == availableThreads) {
                 for (int x = (sections * i) - (sections); x < filesToBeDone; x++) {
                     sectionedList.add(allFiles.get(x));
-
                 }
             } else {
                 for (int x = (sections * i) - (sections); x < (sections * i); x++) {
