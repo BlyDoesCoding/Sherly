@@ -20,21 +20,17 @@ public class ThreadedCompare extends Thread {
             for (Path file2 : pathsToCompareTo) {
                 try {
                     if (sameContent(file1, file2)) {
-                        List<Path> bothPaths = new ArrayList<>();
-                        bothPaths.add(file1);
-                        bothPaths.add(file2);
+                        List<Path> bothList = new ArrayList<>();
+
+                        bothList.add(file1);
+                        bothList.add(file2);
 
                         //here it is trying to add the values in the HashMap
-                        if (Main.fileMap.containsKey(getMD5Sum(file1.toFile()))) {
-                            if (!Main.fileMap.get(getMD5Sum(file1.toFile())).contains(file1)) {
-                                Main.fileMap.get(getMD5Sum(file1.toFile())).add(file1);
-                            }
-                            if (!Main.fileMap.get(getMD5Sum(file1.toFile())).contains(file2)) {
-                                Main.fileMap.get(getMD5Sum(file1.toFile())).add(file2);
-                            }
-                        } else {
-                            Main.fileMap.put(getMD5Sum(file1.toFile()), bothPaths);
-                        }
+                        Main.fileMap.putIfAbsent(getMD5Sum(file1.toFile()), bothList);
+
+                        Main.fileMap.get(getMD5Sum(file1.toFile())).removeAll(bothList);
+                        Main.fileMap.get(getMD5Sum(file1.toFile())).addAll(bothList);
+
                     }
                 } catch (IOException e) {
                     throw new RuntimeException(e);
