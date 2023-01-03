@@ -10,8 +10,8 @@ Sherly is a Multithreaded Duplicate File Finder for your Terminal, written in ja
 
 ## Supported Platforms
 
-| OS                | Tested    |
-| :----:            |:----:     |
-| Linux             | Working   |
-| Windows 10/11/8/7 | TBD       |
-| BSD               | TBD       |
+| OS                | Tested    | Version |
+| :----:            |:----:     | :------:|
+| Linux             | Working   | 1.0.2   |
+| Windows 10/11/8/7 | TBD       | X       |
+| BSD               | TBD       | X       |
