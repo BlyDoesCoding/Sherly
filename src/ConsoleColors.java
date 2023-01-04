@@ -10,5 +10,6 @@ public class ConsoleColors {
 
     public static final String CYAN_BOLD = "\033[1;36m";   // CYAN
 
+    public static final String RED_BOLD = "\033[1;31m";    // RED
 }
 

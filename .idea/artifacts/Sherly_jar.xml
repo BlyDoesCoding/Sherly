@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Sherly:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Sherly_jar</output-path>
+    <root id="archive" name="Sherly.jar">
+      <element id="module-output" name="Sherly" />
+    </root>
+  </artifact>
+</component>

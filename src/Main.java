@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -5,6 +6,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -17,7 +19,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         boolean doTheColorThingy = false;
         boolean showProgress = false;
-
+        boolean deleteDups = false;
         boolean recordFolder = false;
 
         List<String> paths = new ArrayList<>();
@@ -32,6 +34,7 @@ public class Main {
             if (i.equalsIgnoreCase("-c") || i.equalsIgnoreCase("-color")) { doTheColorThingy = true;}
             if (i.equalsIgnoreCase("-p") || i.equalsIgnoreCase("-progress")) { showProgress = true;}
             if (i.equalsIgnoreCase("-f") || i.equalsIgnoreCase("-folder")) { recordFolder = true;}
+            if (i.equalsIgnoreCase("-d") || i.equalsIgnoreCase("-delete")) { deleteDups = true;}
 
         }
 
@@ -118,8 +121,52 @@ public class Main {
 
         }
 
+        if (deleteDups) {
+            List<Path> allTheFilesWillBeDeleted = new ArrayList<>();
+
+            long bytes = 0;
+
+            for (String md5: fileMap.keySet()) {
+                Main.fileMap.get(md5).remove(0);
+                for (Path file: Main.fileMap.get(md5)) {
+                    bytes += file.toFile().length();
+                }
+                allTheFilesWillBeDeleted.addAll(Main.fileMap.get(md5));
+
+            }
 
 
+
+            ask(doTheColorThingy, bytes, allTheFilesWillBeDeleted);
+
+        }
+
+    }
+    public static void ask(boolean color, long bytes, List<Path> deleteThem) {
+        if (color) {
+            System.out.println(ConsoleColors.RED_BOLD + (bytes / 8000000) + " unnecessary MB found, do you want to Delete them? Y / N" + ConsoleColors.RESET);
+        } else {
+            System.out.println((bytes / 8000000) + " unnecessary MB found, do you want to Delete them? Y / N");
+        }
+        Scanner input = new Scanner(System.in);
+        String answer = input.next();
+        if (answer.toLowerCase().contains("y")) {
+            delete(deleteThem);
+            input.close();
+
+        } else if (answer.toLowerCase().contains("n")) {
+            return;
+        } else {
+            ask(color, bytes, deleteThem);
+        }
+        input.close();
+
+    }
+
+    public static void delete(List<Path> deleteThem) {
+        for (Path file : deleteThem) {
+            file.toFile().delete();
+        }
     }
 
 }

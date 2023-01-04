@@ -27,8 +27,14 @@ public class ThreadedCompare extends Thread {
 
                         //here it is trying to add the values in the HashMap so everything is nice and clear
                         Main.fileMap.putIfAbsent(getMD5Sum(file1.toFile()), bothList);
-                        Main.fileMap.get(getMD5Sum(file1.toFile())).removeAll(bothList);
-                        Main.fileMap.get(getMD5Sum(file1.toFile())).addAll(bothList);
+
+                        if (!bothList.isEmpty()) {
+
+                            Main.fileMap.get(getMD5Sum(file1.toFile())).remove(file1);
+                            Main.fileMap.get(getMD5Sum(file1.toFile())).remove(file2);
+                            Main.fileMap.get(getMD5Sum(file1.toFile())).addAll(bothList);
+                        }
+
 
                     }
                 } catch (IOException e) {
