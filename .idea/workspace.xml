@@ -9,14 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b57ac51-c870-474b-9dfd-64a5fc490635" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Sherly_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+    <list default="true" id="9b57ac51-c870-474b-9dfd-64a5fc490635" name="Changes" comment="fixed A bug where it just randomly crashes and added the ability to delete duplicate files with -d paramater">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConsoleColors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsoleColors.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ThreadedCompare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ThreadedCompare.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +60,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Sherly" />
-      <option name="PROGRAM_PARAMETERS" value="-c -f $USER_HOME$/Pictures/ -p -d" />
+      <option name="PROGRAM_PARAMETERS" value="-f $USER_HOME$/Pictures/ -p -d" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672749718265</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fixed A bug where it just randomly crashes and added the ability to delete duplicate files with -d paramater">
+      <created>1672798827144</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672798827144</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,7 +175,8 @@
     <MESSAGE value="Removing not needed lines" />
     <MESSAGE value="Fixed Duplicates in HashMap" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="fixed A bug where it just randomly crashes and added the ability to delete duplicate files with -d paramater" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed A bug where it just randomly crashes and added the ability to delete duplicate files with -d paramater" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

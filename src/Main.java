@@ -129,7 +129,10 @@ public class Main {
             for (String md5: fileMap.keySet()) {
                 Main.fileMap.get(md5).remove(0);
                 for (Path file: Main.fileMap.get(md5)) {
-                    bytes += file.toFile().length();
+                    if (file != null) {
+                        bytes += file.toFile().length();
+                    }
+
                 }
                 allTheFilesWillBeDeleted.addAll(Main.fileMap.get(md5));
 
