@@ -21,18 +21,19 @@ public class ThreadedCompare extends Thread {
                 try {
                     if (sameContent(file1, file2)) {
                         List<Path> bothList = new ArrayList<>();
+                        String md5 = getMD5Sum(file1.toFile());
 
                         bothList.add(file1);
                         bothList.add(file2);
 
                         //here it is trying to add the values in the HashMap so everything is nice and clear
-                        Main.fileMap.putIfAbsent(getMD5Sum(file1.toFile()), bothList);
+                        Main.fileMap.putIfAbsent(md5, bothList);
 
                         if (!bothList.isEmpty()) {
 
-                            Main.fileMap.get(getMD5Sum(file1.toFile())).remove(file1);
-                            Main.fileMap.get(getMD5Sum(file1.toFile())).remove(file2);
-                            Main.fileMap.get(getMD5Sum(file1.toFile())).addAll(bothList);
+                            Main.fileMap.get(md5).remove(file1);
+                            Main.fileMap.get(md5).remove(file2);
+                            Main.fileMap.get(md5).addAll(bothList);
                         }
 
 

@@ -21,6 +21,7 @@ public class Main {
         boolean showProgress = false;
         boolean deleteDups = false;
         boolean recordFolder = false;
+        boolean showDebug = false;
 
         List<String> paths = new ArrayList<>();
 
@@ -35,6 +36,7 @@ public class Main {
             if (i.equalsIgnoreCase("-p") || i.equalsIgnoreCase("-progress")) { showProgress = true;}
             if (i.equalsIgnoreCase("-f") || i.equalsIgnoreCase("-folder")) { recordFolder = true;}
             if (i.equalsIgnoreCase("-d") || i.equalsIgnoreCase("-delete")) { deleteDups = true;}
+            if (i.equalsIgnoreCase("-debug")) { showDebug = true;}
 
         }
 
@@ -43,9 +45,13 @@ public class Main {
             return;
         }
 
-        /*System.out.println("Folders: " + paths.size());
-         System.out.println("Color: " + doTheColorThingy);
-        System.out.println("Progressbar: " + showProgress); */
+        if (showDebug) {
+            System.out.println("Folders: " + paths.size());
+            System.out.println("Color: " + doTheColorThingy);
+            System.out.println("Delete: " + deleteDups);
+            System.out.println("Progressbar: " + showProgress);
+        }
+
 
         List<Path> pathList = new ArrayList<>();
         List<Path> allFiles = new ArrayList<>();
