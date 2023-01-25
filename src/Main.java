@@ -153,9 +153,9 @@ public class Main {
     }
     public static void ask(boolean color, long bytes, List<Path> deleteThem) {
         if (color) {
-            System.out.println(ConsoleColors.RED_BOLD + (bytes / 8000000) + " unnecessary MB found, do you want to Delete them? Y / N" + ConsoleColors.RESET);
+            System.out.println(ConsoleColors.RED_BOLD + (bytes / 8000000) + " unnecessary MB in " + deleteThem.size() + " Files found, do you want to Delete them? Y / N" + ConsoleColors.RESET);
         } else {
-            System.out.println((bytes / 8000000) + " unnecessary MB found, do you want to Delete them? Y / N");
+            System.out.println((bytes / 8000000) + " unnecessary MB in " + deleteThem.size() + " Files found, do you want to Delete them? Y / N");
         }
         Scanner input = new Scanner(System.in);
         String answer = input.next();
