@@ -151,6 +151,7 @@ public class Main {
         }
 
     }
+    //print files and ask user
     public static void ask(boolean color, long bytes, List<Path> deleteThem) {
         if (color) {
             System.out.println(ConsoleColors.RED_BOLD + (bytes / 8000000) + " unnecessary MB in " + deleteThem.size() + " Files found, do you want to Delete them? Y / N" + ConsoleColors.RESET);

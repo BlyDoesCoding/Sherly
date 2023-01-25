@@ -9,8 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b57ac51-c870-474b-9dfd-64a5fc490635" name="Changes" comment="Simplify code in ThreadedCompare.java and added option for debuging with -debug">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9b57ac51-c870-474b-9dfd-64a5fc490635" name="Changes" comment="Added Number of files in -d option">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -171,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674655119812</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added Number of files in -d option">
+      <created>1674655881410</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1674655881410</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,7 +212,8 @@
     <MESSAGE value="fixed A bug where it just randomly crashes and added the ability to delete duplicate files with -d paramater" />
     <MESSAGE value="Fixed another Random Crash that happened when a file size is near 0" />
     <MESSAGE value="Simplify code in ThreadedCompare.java and added option for debuging with -debug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplify code in ThreadedCompare.java and added option for debuging with -debug" />
+    <MESSAGE value="Added Number of files in -d option" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Number of files in -d option" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
