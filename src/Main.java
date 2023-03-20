@@ -22,6 +22,7 @@ public class Main {
         boolean deleteDups = false;
         boolean recordFolder = false;
         boolean showDebug = false;
+        boolean help = false;
 
         List<String> paths = new ArrayList<>();
 
@@ -36,10 +37,22 @@ public class Main {
             if (i.equalsIgnoreCase("-p") || i.equalsIgnoreCase("-progress")) { showProgress = true;}
             if (i.equalsIgnoreCase("-f") || i.equalsIgnoreCase("-folder")) { recordFolder = true;}
             if (i.equalsIgnoreCase("-d") || i.equalsIgnoreCase("-delete")) { deleteDups = true;}
+            if (i.equalsIgnoreCase("-h") || i.equalsIgnoreCase("-help")) { help = true;}
             if (i.equalsIgnoreCase("-debug")) { showDebug = true;}
 
         }
 
+        if (help) {
+            System.out.println("Usage: sherly -f inputfolder1 inputfolder2 inputfolder3 [options]...");
+            System.out.println(" ");
+            System.out.println("   -h / -help             show this");
+            System.out.println("   -f / -folder           all the folders you want to scan for (see example above!)");
+            System.out.println("   -c / -color            enable colored messages");
+            System.out.println("   -p / -progress         enable progress indicator");
+            System.out.println("   -d / -delete           delete all found duplicates except one");
+            System.out.println("   -debug                 debug stuff");
+            return;
+        }
         if (paths.size() == 0) {
             System.out.println("Aborted, no Folders Found!");
             return;
