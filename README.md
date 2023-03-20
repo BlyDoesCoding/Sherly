@@ -20,10 +20,10 @@ Usage: sherly -f inputfolder1 inputfolder2 inputfolder3 [options]...
 ## Supported Platforms
 
 | OS                | Working   | Version |
-| :----:            |:----:     | :------:|
-| Linux             | Yes       | 1.1.1   |
-| Windows 10/11/8/7 | Yes       | 1.1.1   |
-| BSD               | TBD       | X       |
+| :----:            |:----:     |:-------:|
+| Linux             | Yes       |  1.1.2  |
+| Windows 10/11/8/7 | Yes       |  1.1.2  |
+| BSD               | TBD       |    X    |
 
 ## Screenshots
 ![screenshot](https://github.com/BlyDoesCoding/Sherly/blob/master/Images/screenshot?raw=true)

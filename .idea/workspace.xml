@@ -9,8 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b57ac51-c870-474b-9dfd-64a5fc490635" name="Changes" comment="Added -h / -help option for better usability">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9b57ac51-c870-474b-9dfd-64a5fc490635" name="Changes" comment="Rework of README.md">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -194,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679341241426</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Rework of README.md">
+      <created>1679341913990</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1679341913990</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,7 +237,8 @@
     <MESSAGE value="Simplify code in ThreadedCompare.java and added option for debuging with -debug" />
     <MESSAGE value="Added Number of files in -d option" />
     <MESSAGE value="Added -h / -help option for better usability" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added -h / -help option for better usability" />
+    <MESSAGE value="Rework of README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rework of README.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
