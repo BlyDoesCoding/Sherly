@@ -5,8 +5,17 @@
 ## Introduction
 Sherly is a Multithreaded Duplicate File Finder for your Terminal, written in java. You can Easily find duplicate Images, videos as well as any other type of Data. That can be helpful if you run on small storage or just want to keep regular housekeeping.
 
-## Screenshots
-![screenshot](https://github.com/BlyDoesCoding/Sherly/blob/master/Images/screenshot?raw=true)
+## Full Usages
+```console
+Usage: sherly -f inputfolder1 inputfolder2 inputfolder3 [options]...
+ 
+   -h / -help             show this
+   -f / -folder           all the folders you want to scan for (see example above!)
+   -c / -color            enable colored messages
+   -p / -progress         enable progress indicator
+   -d / -delete           delete all found duplicates except one
+   -debug                 debug stuff
+```
 
 ## Supported Platforms
 
@@ -15,3 +24,6 @@ Sherly is a Multithreaded Duplicate File Finder for your Terminal, written in ja
 | Linux             | Yes       | 1.1.1   |
 | Windows 10/11/8/7 | Yes       | 1.1.1   |
 | BSD               | TBD       | X       |
+
+## Screenshots
+![screenshot](https://github.com/BlyDoesCoding/Sherly/blob/master/Images/screenshot?raw=true)
