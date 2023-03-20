@@ -9,8 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b57ac51-c870-474b-9dfd-64a5fc490635" name="Changes" comment="Update deletion behavior and fixed file == NULL bug">
+    <list default="true" id="9b57ac51-c870-474b-9dfd-64a5fc490635" name="Changes" comment="Update README.md according to the new deletion behavior">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679344271798</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Update README.md according to the new deletion behavior">
+      <created>1679344426853</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1679344426853</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,7 +262,8 @@
     <MESSAGE value="Added -h / -help option for better usability" />
     <MESSAGE value="Rework of README.md" />
     <MESSAGE value="Update deletion behavior and fixed file == NULL bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update deletion behavior and fixed file == NULL bug" />
+    <MESSAGE value="Update README.md according to the new deletion behavior" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README.md according to the new deletion behavior" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -12,6 +12,7 @@ Usage: sherly -f inputfolder1 inputfolder2 inputfolder3 [options]...
    -h / -help             show this
    -f / -folder           all the folders you want to scan for (see example above!)
    -c / -color            enable colored messages
+   -t / -threads          override default Thread number (default is usually number of cores * 2)
    -p / -progress         enable progress indicator
    -d / -delete           delete all dups except one without asking first
    -debug                 debug stuff

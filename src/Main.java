@@ -21,6 +21,8 @@ public class Main {
         boolean showProgress = false;
         boolean deleteDups = false;
         boolean recordFolder = false;
+        boolean recordThreads = false;
+        int saidThreads = 0;
         boolean showDebug = false;
         boolean help = false;
 
@@ -33,9 +35,14 @@ public class Main {
                     paths.add(i);
                 } else {recordFolder = false;}
             }
+            if (recordThreads) {
+                saidThreads = Integer.parseInt(i);
+                recordThreads = false;
+            }
             if (i.equalsIgnoreCase("-c") || i.equalsIgnoreCase("-color")) { doTheColorThingy = true;}
             if (i.equalsIgnoreCase("-p") || i.equalsIgnoreCase("-progress")) { showProgress = true;}
             if (i.equalsIgnoreCase("-f") || i.equalsIgnoreCase("-folder")) { recordFolder = true;}
+            if (i.equalsIgnoreCase("-t") || i.equalsIgnoreCase("-threads")) { recordThreads = true;}
             if (i.equalsIgnoreCase("-d") || i.equalsIgnoreCase("-delete")) { deleteDups = true;}
             if (i.equalsIgnoreCase("-h") || i.equalsIgnoreCase("-help")) { help = true;}
             if (i.equalsIgnoreCase("-debug")) { showDebug = true;}
@@ -48,6 +55,7 @@ public class Main {
             System.out.println("   -h / -help             show this");
             System.out.println("   -f / -folder           all the folders you want to scan for (see example above!)");
             System.out.println("   -c / -color            enable colored messages");
+            System.out.println("   -t / -threads          override default Thread number (default is usually number of cores * 2)");
             System.out.println("   -p / -progress         enable progress indicator");
             System.out.println("   -d / -delete           delete all dups except one without asking first");
             System.out.println("   -debug                 debug stuff");
@@ -63,6 +71,7 @@ public class Main {
             System.out.println("Color: " + doTheColorThingy);
             System.out.println("Delete: " + deleteDups);
             System.out.println("Progressbar: " + showProgress);
+            System.out.println("Commanded Threads " + saidThreads);
         }
 
 
@@ -78,10 +87,12 @@ public class Main {
             allFiles.addAll(pathList);
         }
 
-        // calculations for multithreading
 
+
+        // calculations for multithreading
         //The number of Cores or better said Threads that can be used
         int availableThreads = Runtime.getRuntime().availableProcessors();
+        if (saidThreads != 0) {availableThreads = saidThreads;}
 
         //just the number of All Files in all Folders taken from the Args
         int filesToBeDone = allFiles.size();
