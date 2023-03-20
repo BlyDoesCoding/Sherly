@@ -49,7 +49,7 @@ public class Main {
             System.out.println("   -f / -folder           all the folders you want to scan for (see example above!)");
             System.out.println("   -c / -color            enable colored messages");
             System.out.println("   -p / -progress         enable progress indicator");
-            System.out.println("   -d / -delete           delete all found duplicates except one");
+            System.out.println("   -d / -delete           delete all dups except one without asking first");
             System.out.println("   -debug                 debug stuff");
             return;
         }
@@ -119,9 +119,9 @@ public class Main {
             TimeUnit.SECONDS.sleep(1);
 
             if (showProgress && doTheColorThingy) {
-                System.out.print(ConsoleColors.BLUE_BOLD + "Progress: " + ConsoleColors.GREEN_BOLD + progress + " / " + filesToBeDone + ConsoleColors.RESET + "\r");
+                System.out.print(ConsoleColors.BLUE_BOLD + "Progress: " + ConsoleColors.GREEN_BOLD + progress + " / " + filesToBeDone + " | " + (progress * 100 / filesToBeDone) + "%" + ConsoleColors.RESET + "\r");
             } else if (showProgress) {
-                System.out.print("Progress: " + progress + " / " + filesToBeDone + "\r");
+                System.out.print("Progress: " + progress + " / " + filesToBeDone + " | " + (progress * 100 / filesToBeDone) + "%" + "\r");
             }
 
         }
@@ -140,7 +140,7 @@ public class Main {
 
         }
 
-        if (deleteDups) {
+
             List<Path> allTheFilesWillBeDeleted = new ArrayList<>();
 
             long bytes = 0;
@@ -159,9 +159,14 @@ public class Main {
 
 
 
-            ask(doTheColorThingy, bytes, allTheFilesWillBeDeleted);
+            if (deleteDups) {
+                delete(allTheFilesWillBeDeleted);
+            } else {
+                ask(doTheColorThingy, bytes, allTheFilesWillBeDeleted);
+            }
 
-        }
+
+
 
     }
     //print files and ask user
@@ -188,7 +193,9 @@ public class Main {
 
     public static void delete(List<Path> deleteThem) {
         for (Path file : deleteThem) {
-            file.toFile().delete();
+            if (file != null) {file.toFile().delete();}
+
+
         }
     }
 
