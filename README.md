@@ -13,7 +13,7 @@ Usage: sherly -f inputfolder1 inputfolder2 inputfolder3 [options]...
    -f / -folder           all the folders you want to scan for (see example above!)
    -c / -color            enable colored messages
    -p / -progress         enable progress indicator
-   -d / -delete           delete all found duplicates except one
+   -d / -delete           delete all dups except one without asking first
    -debug                 debug stuff
 ```
 
