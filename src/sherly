@@ -1,0 +1,2 @@
+#!/usr/bin/sh
+java -jar /usr/share/sherly/sherly.jar $@
