@@ -9,8 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b57ac51-c870-474b-9dfd-64a5fc490635" name="Changes" comment="Prepare for Aur Package">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9b57ac51-c870-474b-9dfd-64a5fc490635" name="Changes" comment="AUR Package instructions">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -240,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679415958151</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="AUR Package instructions">
+      <created>1679508360229</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1679508360229</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,7 +289,8 @@
     <MESSAGE value="Added -t to tell Sherly the number of Threads it should use" />
     <MESSAGE value="Upload Bin" />
     <MESSAGE value="Prepare for Aur Package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prepare for Aur Package" />
+    <MESSAGE value="AUR Package instructions" />
+    <option name="LAST_COMMIT_MESSAGE" value="AUR Package instructions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

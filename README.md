@@ -25,9 +25,9 @@ yay -S sherly-git
 #just replace yay with your aur helper of choise
 
 # Any other OS
-
-you can easily download the jar file from the releases Tab and are able to execute it with the prefix "java --jar"
 ```
+you can easily download the jar file from the releases Tab and are able to execute it with the prefix "java --jar"
+
 
 ## Supported Platforms
 
