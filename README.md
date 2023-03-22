@@ -18,7 +18,7 @@ Usage: sherly -f inputfolder1 inputfolder2 inputfolder3 [options]...
    -debug                 debug stuff
 ```
 ## Installation
-# Via AUR for Arch users
+## Via AUR for Arch users
 
 ```console
 yay -S sherly-git
@@ -26,7 +26,7 @@ yay -S sherly-git
 
 
 ```
-# Any other OS
+## Any other OS
 You can easily download the sherly.jar file from the releases tab and are able to execute it with the prefix "java --jar".
 
 
