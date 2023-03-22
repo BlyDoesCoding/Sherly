@@ -17,14 +17,25 @@ Usage: sherly -f inputfolder1 inputfolder2 inputfolder3 [options]...
    -d / -delete           delete all dups except one without asking first
    -debug                 debug stuff
 ```
+## Installation
+# Via AUR for Arch users
+
+```console
+yay -S sherly-git
+#just replace yay with your aur helper of choise
+
+# Any other OS
+
+you can easily download the jar file from the releases Tab and are able to execute it with the prefix "java --jar"
+```
 
 ## Supported Platforms
 
-| OS                | Working   | Version |
-| :----:            |:----:     |:-------:|
-| Linux             | Yes       |  1.1.2  |
-| Windows 10/11/8/7 | Yes       |  1.1.2  |
-| BSD               | TBD       |    X    |
+| OS                |    Working     | Version |
+| :----:            |:--------------:|:-------:|
+| Linux             |      Yes       |  1.1.2  |
+| Windows 10/11/8/7 |      Yes       |  1.1.2  |
+| BSD               | Not yet Tested |    X    |
 
 ## Screenshots
 ![screenshot](https://github.com/BlyDoesCoding/Sherly/blob/master/Images/screenshot?raw=true)
