@@ -121,7 +121,8 @@ public class Main {
 
             //sectionedList gives the thread their Assigned Part of Files and allFiles are all the Files
 
-            ThreadedCompare threadedCompare = new ThreadedCompare(sectionedList, allFiles);
+
+            ThreadedCompare threadedCompare = new ThreadedCompare(sectionedList);
             threadedCompare.start();
 
         }
@@ -136,6 +137,13 @@ public class Main {
             }
 
         }
+        ArrayList toRemove = new ArrayList<String>();
+        for (String md5: fileMap.keySet()) {
+            if (Main.fileMap.get(md5).size() == 1) {
+                toRemove.add(md5);
+            }
+        }
+        fileMap.keySet().removeAll(toRemove);
 
         //now everything is finished and the Filemap (hashmap with all Dups) can be printed out in a nice view
         //System.out.println(fileMap);
