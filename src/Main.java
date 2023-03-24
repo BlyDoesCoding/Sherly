@@ -124,7 +124,7 @@ public class Main {
         }
         //this updates if necessary the Progress bar and checks for Finished threads
         while (completedThreads < availableThreads) {
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.MILLISECONDS.sleep(250);
 
             if (showProgress && doTheColorThingy) {
                 System.out.print(ConsoleColors.BLUE_BOLD + "Progress: " + ConsoleColors.GREEN_BOLD + progress + " / " + filesToBeDone + " | " + (progress * 100 / filesToBeDone) + "%" + ConsoleColors.RESET + "\r");
