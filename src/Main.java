@@ -158,7 +158,7 @@ public class Main {
             }
 
         }
-
+        // new algo
 
             List<Path> allTheFilesWillBeDeleted = new ArrayList<>();
 

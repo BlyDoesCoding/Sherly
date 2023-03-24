@@ -14,6 +14,7 @@ public class ThreadedCompare extends Thread {
 
         this.pathsToCompareTo = pathsToCompareTo;
     }
+
     @Override
     public void run() {
 
