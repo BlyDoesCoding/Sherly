@@ -29,7 +29,6 @@ public class ThreadedCompare extends Thread {
                 throw new RuntimeException(e);
             }
 
-
             if (Main.fileMap.containsKey(MD5)) {
                 fileArray.addAll(Main.fileMap.get(MD5));
                 Main.fileMap.put(MD5, fileArray);
@@ -37,16 +36,10 @@ public class ThreadedCompare extends Thread {
                 Main.fileMap.put(MD5, fileArray);
             }
 
-
             Main.progress++;
         }
 
-        
         Main.completedThreads++;
-
-
-
-
 
     }
 

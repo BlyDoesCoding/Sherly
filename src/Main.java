@@ -74,7 +74,6 @@ public class Main {
             System.out.println("Commanded Threads " + saidThreads);
         }
 
-
         List<Path> pathList = new ArrayList<>();
         List<Path> allFiles = new ArrayList<>();
 
@@ -86,8 +85,6 @@ public class Main {
             }
             allFiles.addAll(pathList);
         }
-
-
 
         // calculations for multithreading
         //The number of Cores or better said Threads that can be used
@@ -119,8 +116,7 @@ public class Main {
             }
             //Start Multithreading
 
-            //sectionedList gives the thread their Assigned Part of Files and allFiles are all the Files
-
+            //sectionedList gives the thread their Assigned Part of Files
 
             ThreadedCompare threadedCompare = new ThreadedCompare(sectionedList);
             threadedCompare.start();
@@ -135,7 +131,6 @@ public class Main {
             } else if (showProgress) {
                 System.out.print("Progress: " + progress + " / " + filesToBeDone + " | " + (progress * 100 / filesToBeDone) + "%" + "\r");
             }
-
         }
         ArrayList toRemove = new ArrayList<String>();
         for (String md5: fileMap.keySet()) {
@@ -158,7 +153,6 @@ public class Main {
             }
 
         }
-        // new algo
 
             List<Path> allTheFilesWillBeDeleted = new ArrayList<>();
 
@@ -176,16 +170,11 @@ public class Main {
 
             }
 
-
-
             if (deleteDups) {
                 delete(allTheFilesWillBeDeleted);
             } else {
                 ask(doTheColorThingy, bytes, allTheFilesWillBeDeleted);
             }
-
-
-
 
     }
     //print files and ask user
@@ -213,7 +202,6 @@ public class Main {
     public static void delete(List<Path> deleteThem) {
         for (Path file : deleteThem) {
             if (file != null) {file.toFile().delete();}
-
 
         }
     }
