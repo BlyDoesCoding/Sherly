@@ -26,7 +26,7 @@ Compile yourself
 
 ## Usage/Examples
 
-```bash
+```
 Usage: sherly -f inputfolder1 inputfolder2 inputfolder3 [options]...
 
    -h / -help             show this
