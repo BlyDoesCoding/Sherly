@@ -24,6 +24,7 @@ public class Main {
         boolean recordThreads = false;
         int saidThreads = 0;
         boolean showDebug = false;
+        boolean noInput = false;
         boolean help = false;
 
         List<String> paths = new ArrayList<>();
@@ -44,6 +45,7 @@ public class Main {
             if (i.equalsIgnoreCase("-f") || i.equalsIgnoreCase("-folder")) { recordFolder = true;}
             if (i.equalsIgnoreCase("-t") || i.equalsIgnoreCase("-threads")) { recordThreads = true;}
             if (i.equalsIgnoreCase("-d") || i.equalsIgnoreCase("-delete")) { deleteDups = true;}
+            if (i.equalsIgnoreCase("-n") || i.equalsIgnoreCase("-noinput")) { noInput = true; }
             if (i.equalsIgnoreCase("-h") || i.equalsIgnoreCase("-help")) { help = true;}
             if (i.equalsIgnoreCase("-debug")) { showDebug = true;}
 
@@ -58,6 +60,7 @@ public class Main {
             System.out.println("   -t / -threads          override default Thread number (default is usually number of cores * 2)");
             System.out.println("   -p / -progress         enable progress indicator");
             System.out.println("   -d / -delete           delete all dups except one without asking first");
+            System.out.println("   -n / -noinput          skip all user input");
             System.out.println("   -debug                 debug stuff");
             return;
         }
@@ -172,7 +175,7 @@ public class Main {
 
             if (deleteDups) {
                 delete(allTheFilesWillBeDeleted);
-            } else {
+            } else if (!noInput) {
                 ask(doTheColorThingy, bytes, allTheFilesWillBeDeleted);
             }
 
