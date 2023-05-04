@@ -35,6 +35,7 @@ Usage: sherly -f inputfolder1 inputfolder2 inputfolder3 [options]...
    -t / -threads          override default Thread number (default is usually number of cores * 2)
    -p / -progress         enable progress indicator
    -d / -delete           delete all dups except one without asking first
+   -n / -noinput          skip all user input
    -debug                 debug stuff
 ```
 
