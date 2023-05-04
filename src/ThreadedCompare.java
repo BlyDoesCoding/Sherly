@@ -1,10 +1,10 @@
-import java.io.*;
-import java.nio.file.Files;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.nio.file.Path;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 public class ThreadedCompare extends Thread {
     private final List<Path> pathsToCompareTo;
