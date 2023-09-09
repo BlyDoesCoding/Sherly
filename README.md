@@ -1,7 +1,7 @@
 
 # Sherly
 
-![Sherly Icon](sherly.png)
+![Sherly Icon](logo.png)
 
 Sherly is a Multithreaded Duplicate File Finder for your Terminal, written in java. You can Easily find duplicate Images, videos as well as any other type of Data. That can be helpful if you run on small storage or just want to keep regular housekeeping.
 
